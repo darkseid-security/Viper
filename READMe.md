@@ -2,7 +2,7 @@ Viper V1.2
 ================
 Viper is a SSH Multi-Threaded Brute force Framework
 
-<img src="https://raw.githubusercontent.com/darkseid-security/Viper/main/Screenshots/Screenshot_2023-09-25_14_36_01.png" height="500" width="1000">
+<img src="https://raw.githubusercontent.com/darkseid-security/Viper/main/Screenshots/Screenshot_2023-09-25_14_36_01.png">
  
 Features
 =============
