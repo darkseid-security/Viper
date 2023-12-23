@@ -7,7 +7,7 @@ from tqdm import tqdm
 print(Fore.RED + """
 ╦  ╦╦╔═╗╔═╗╦═╗
 ╚╗╔╝║╠═╝║╣ ╠╦╝
- ╚╝ ╩╩  ╚═╝╩╚═ """ + Fore.WHITE + "Parallel SSH Bruteforcer V1.2" + Fore.RESET)
+ ╚╝ ╩╩  ╚═╝╩╚═ """ + Fore.WHITE + "Parallel SSH Bruteforcer V1.2 Developed by" + Fore.GREEN + "ENVY IT GROUP" +  Fore.RESET)
  
 # Configuration
 host = '10.1.1.37'  # SSH host
