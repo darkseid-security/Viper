@@ -10,17 +10,18 @@ Features
 - Easy to configure 
 - Adjustable Threads
 - Visual UI including progress bar
-- [*New Feature] Upload file to set path if password is cracked
+- When password is cracked program will attempt to upload a file to set path
+- [*New Feature] added SSH detection on port 22
+- [*New Feature] added SSH version detection 
  
-
 TODO
-=========
-- Add SSH version detection
+===========
+Add exploit detection
 
 Note
 =========
 - If threads set to 5 if someone logs in to SSH while brute-forcing program will crash.
-- Add own windows executable to /Files/windows_updater.exe to bypass AV and change windows_malware variable to windows_updater.exe.
+- Add own windows executable to /Files/updater.png to bypass AV and change windows_malware variable to windows_updater.exe.
 
 Run
 ========
