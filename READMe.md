@@ -16,12 +16,12 @@ Features
  
 TODO
 ===========
-Add exploit detection
+Improve exploit detection
 
 Note
 =========
 - If threads set to 5 if someone logs in to SSH while brute-forcing program will crash.
-- Add own windows executable to /Files/updater.png to bypass AV and change windows_malware variable to windows_updater.exe.
+- Add own windows executable to /Files/updater.png and update variable malware.
 
 Run
 ========
